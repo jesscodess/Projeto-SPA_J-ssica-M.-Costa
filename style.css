@@ -1,0 +1,366 @@
+body{
+    max-width:1100px;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    width:100%;
+    padding:0;
+    margin:0;
+    background-color:#E0E0E0;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+}
+#logo{
+    padding:10px;
+}
+#pagetitle{
+    text-align:center;
+    padding:10px;
+    margin-left:20px;
+    margin-right:20px;
+}
+h1{
+    font-size:20px;
+}
+#hamburger{
+    padding:10px;
+}
+.main{
+    display:flex;
+    flex-direction:column;
+}
+.inputbox{
+    padding:25px 12px 12px 12px;
+    margin:3px;
+    display:flex;
+    flex-direction:column;
+    border-bottom:solid 1px #333333;
+}
+label{
+    font-size:12px;
+    padding-bottom:5px;
+}
+select{
+    font-size:12px;
+    padding:3px;
+}
+input{
+    font-size:12px;
+    padding:3px;
+}
+.campos{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+.campo1{
+    display:flex;
+    flex-direction:column;
+    margin-top:2px;
+    margin-right:2px;
+    margin-bottom:10px;
+    margin-left:2px;
+    padding:4px;
+    border-radius:5px;
+    width:97%;
+}
+#tipotransacao{
+    color:gray;
+    background-color: white;
+    border-radius:2px;
+}
+.campo2{
+    display:flex;
+    flex-direction:column;
+    margin-top:0;
+    margin-right:2px;
+    margin-bottom:10px;
+    margin-left:2px;
+    padding:4px;
+    border-radius:5px;
+    width:97%;
+}
+.campo3{
+    display:flex;
+    flex-direction:column;
+    margin-top:0;
+    margin-right:2px;
+    margin-bottom:10px;
+    margin-left:2px;
+    padding:4px;
+    border-radius:5px;
+    width:97%;
+}
+#adicionar{
+    width:100%;
+    background-color:#333333;
+    color:white;
+    margin-left:0;
+    margin-top:5px;
+    margin-right:5px;
+    margin-bottom:20px;
+    padding:5px;
+    border-radius:5px;
+}
+.submitbutton{
+    margin:6px 5px 2px 5px;
+}
+h2{
+    text-align:center;
+    font-size:16px;
+}
+table{
+    font-size:12px;
+    border-collapse:collapse;
+}
+.cabecalhotabela{
+    text-align:center;
+    padding:4px;
+    border-bottom:solid 1px #333333;
+}
+.corpotabela{
+    text-align:left;
+    padding:6px 6px 6px 25px;
+    border-bottom:solid 1px #333333;
+}
+.total{
+    font-weight:bold;
+    text-align:left;
+    padding:6px 6px 6px 23px;
+}
+#fim{
+    width:100%;
+    margin-top:3px;
+    border-top:solid 1px #333333;
+}
+/*media query para tablet - retrato*/
+@media screen and (min-width:768px) and (min-height:1024px){
+    header{
+        width:100%;
+        padding:0;
+        background-color:#E0E0E0;
+        display:flex;
+        flex-direction:row;
+        align-content:center;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:wrap;
+    }
+    #logo{
+        padding:20px;
+    }
+    #hamburger{
+        padding:20px;
+    }
+    .inputbox{
+        margin-top:25px;
+        margin-right:10px;
+        margin-left:10px;
+        display:flex;
+        flex-direction:flex-start;
+        align-items:flex-end;
+        border:solid 1px #333333;
+        border-radius:5px;
+    }
+    .campos{
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-start;
+        justify-items:left;
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+    .campo1{
+        display:flex;
+        flex-direction:column;
+        margin-top:2px;
+        margin-right:2px;
+        margin-bottom:10px;
+        margin-left:2px;
+        padding:7px;
+        border-radius:5px;
+        width:100%;
+        }
+    #tipotransacao{
+        color:gray;
+        background-color: white;
+        border-radius:2px;
+    }
+    .campo2{
+        display:flex;
+        flex-direction:column;
+        margin-top:0;
+        margin-right:2px;
+        margin-bottom:10px;
+        margin-left:2px;
+        padding:7px;
+        border-radius:5px;
+        width:100%;
+    }
+    .campo3{
+        display:flex;
+        flex-direction:column;
+        margin-top:0;
+        margin-right:2px;
+        margin-bottom:10px;
+        margin-left:2px;
+        padding:7px;
+        border-radius:5px;
+        width:100%;
+    }
+    .submitbutton{
+        display:flex;
+        justify-content:flex-end;
+        width:35%;
+        margin:0;
+        padding:4px;
+    }
+    table{
+        padding:10px;
+        width:100%;
+    }
+}
+/*media query para tablet - paisagem*/
+@media screen and (min-width:1024px) and (min-height:768px){
+    .main{
+        display:flex;
+        flex-direction:row;
+    }
+    header{
+        width:100%;
+        padding:0;
+        background-color:#E0E0E0;
+        display:flex;
+        flex-direction:row;
+        align-content:center;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:wrap;
+    }
+    #logo{
+        padding:20px;
+    }
+    #hamburger{
+        padding:20px;
+    }
+    .inputbox{
+        width:30%;
+        margin-top:25px;
+        margin-right:10px;
+        margin-left:10px;
+        display:flex;
+        flex-direction:column;
+        border:solid 1px #333333;
+        border-radius:5px;
+        padding:10px;
+    }
+    .campo1{
+        display:flex;
+        flex-direction:column;
+    }
+    .campo2{
+        display:flex;
+        flex-direction:column;
+    }
+    .campo3{
+        display:flex;
+        flex-direction:column;
+    }
+    .submitbutton{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        width:97%;
+    }
+    .tabela{
+        display:flex;
+        flex-direction:column;
+        width:70%;
+        padding:20px;
+    }
+    #começo{
+        padding:15px;
+        width:100%;
+    }
+    #fim{
+        padding:15px;
+        width:100%;
+    }
+}
+/*media query para telas maiores*/
+@media screen and (min-width:1110px) and (max-width:1900px){
+    body{
+        max-width:1900px;
+    }
+    .main{
+        display:flex;
+        flex-direction:row;
+        padding:10px 100px 100px 100px;
+    }
+    header{
+        width:100%;
+        padding:0;
+        background-color:#E0E0E0;
+        display:flex;
+        flex-direction:row;
+        align-content:center;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:wrap;
+    }
+    #logo{
+        padding:20px 20px 20px 110px;
+    }
+    #hamburger{
+        padding:20px 110px 20px 20px;
+    }
+    .inputbox{
+        width:30%;
+        margin-top:25px;
+        margin-right:10px;
+        margin-left:10px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        border:solid 1px #333333;
+        border-radius:5px;
+        padding:10px;
+    }
+    .campo1{
+        display:flex;
+        flex-direction:column;
+    }
+    .campo2{
+        display:flex;
+        flex-direction:column;
+    }
+    .campo3{
+        display:flex;
+        flex-direction:column;
+    }
+    .submitbutton{
+        width:98%;
+        margin:0;
+        padding:0;
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+    }
+    .tabela{
+        display:flex;
+        flex-direction:column;
+        width:70%;
+        padding:20px;
+    }
+    #começo{
+        padding:15px;
+        width:100%;
+    }
+    #fim{
+        padding:15px;
+        width:100%;
+    }
+}
