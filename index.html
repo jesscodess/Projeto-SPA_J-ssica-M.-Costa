@@ -13,25 +13,28 @@
     <body>
         <header>
             <div id="logo">
-                <img src="logo.png" width="50px" height="50px">
+                <img src="logo.png" width="30px" height="27.63px">
             </div>
             <div id="pagetitle">
                 <h1>Controle financeiro</h1>
             </div>
             <div id="hamburger">
-                <img src="hamburger.png" width="15px" height="20px">
+                <img src="hamburger.png" width="20px" height="20px">
             </div>
-        <!--Segue código da navbar. Como não posso mexer com o JS ainda, vou deixar esse trecho oculto aqui e, no lugar, só colocar a imagem do hamburger menu para conseguir alinhar os itens no cabeçalho.
-            <div>
-                <nav id="navbar">
-                    <a href="#cadastro">Cadastro de transações</a>
-                    <a href="#limpar">Limpar dados</a>
+            <div id="navbar">
+                <nav>
+                    <div class="navbartexto">
+                        <a href="#cadastro" id="linkcadastro">Cadastro de transações</a>
+                        <a href="#limpar" id="linklimpar">Limpar dados</a>
+                    </div>
                 </nav>
             </div>
-        -->
         </header>
         <div class="main">
             <div class="inputbox">
+                <div id="novatransacao">
+                    <p>Nova transação</p>
+                </div>
                 <div class="campos">
                     <div class="campo1">
                         <label for="tipotransacao">Tipo de transação</label>
@@ -54,9 +57,9 @@
                 </div>
             </div>
             <!--extrato aqui-->
+            <h2>Extrato de transações</h2>
             <div class="tabela">
-                <h2>Extrato de transações</h2>
-                <table id="começo">
+                <table id="comeco">
                     <thead>
                         <tr>
                             <th class="cabecalhotabela">Mercadoria</th>
@@ -65,15 +68,23 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="corpotabela">Nenhuma transação cadastrada.</td>
-                            <td class="corpotabela">Nenhuma transação cadastrada.</td>
+                            <td class="corpotabela">+  Lorem ipsum dolor sit amet<br> consectetur</td>
+                            <td class="corpotabela">R$ 12.999,99</td>
+                        </tr>
+                        <tr>
+                            <td class="corpotabela">-  Quis nostrud exercitation</td>
+                            <td class="corpotabela">R$ 99,99</td>
+                        </tr>
+                        <tr>
+                            <td class="corpotabela">+  Lorem ipsum</td>
+                            <td class="corpotabela">R$ 9,99</td>
                         </tr>
                     </tbody>
                 </table>
                 <table id="fim">
                         <tr>
-                            <td class="total">Total</td>
-                            <td class="total">R$0</td>
+                            <td id="total">Total</td>
+                            <td id="total2">R$12.909,99<br> <span id="lucro">[LUCRO]</span></td>
                         </tr>
                 </table>
             </div>
