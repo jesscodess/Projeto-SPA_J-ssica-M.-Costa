@@ -235,18 +235,17 @@ table{
         justify-content:flex-start;
     }
     #logo{
-        padding:15px 10px 15px 22px;
+        padding:15px 5px 15px 22px;
         margin-right:0;
     }
     #pagetitle{
         justify-content:flex-start;
-        padding: 20px 20px 20px 10px;
+        padding: 20px 20px 20px 5px;
         margin-right:0;
     }
     #hamburger{
         display:none;
     }
-/*RETOMAR POR AQUI*/
     #navbar{
         display:flex;
         padding-left:44%;
@@ -257,46 +256,55 @@ table{
         font-size:16px;
         background-color:white;
         color:black;
+        padding:5px;
+        line-height:19.2px;
     }
     .navbartexto a{
         text-decoration:none;
         color:black;
+        font-weight:600;
     }
     #linkcadastro{
-        padding:4px 25px 4px 10px;
+        padding:10px;
+        border-right:solid 1px #333333;
     }
     #linklimpar{
-        padding:4px 10px 4px 25px;
+        padding:10px;
     }
+/*formulário*/
     .inputbox{
-        width:30%;
+        width:45%;
         margin-top:25px;
-        margin-right:10px;
+        margin-right:5px;
         margin-left:10px;
         display:flex;
         flex-direction:column;
         border:solid 1px #333333;
         border-radius:5px;
-        padding:10px;
+        padding:5px 15px;
     }
-    .campo1{
+    #novatransacao{
+        margin:0 35% 0 25%;
+    }
+    .campos{
         display:flex;
         flex-direction:column;
     }
-    .campo2{
-        display:flex;
-        flex-direction:column;
-    }
-    .campo3{
-        display:flex;
-        flex-direction:column;
+    .campo1, .campo2, .campo3{
+        width:97%;
+        margin:0px 0px 5px 0px;
+        padding:5px;
     }
     .submitbutton{
+        width:97%;
         display:flex;
         flex-direction:column;
-        align-items:flex-start;
-        width:97%;
     }
+    #adicionar{
+        margin:17px;
+    }
+/*tabela*/
+/*CONTINUAR DAQUI*/
     .tabela{
         display:flex;
         flex-direction:column;
