@@ -122,6 +122,14 @@ table{
     margin:5px 18px 18px 18px;
     border-top:solid 1px #333333;
 }
+#valorcabecalho{
+    text-align:right;
+    padding-right:20px;
+}
+#valor1, #valor2, #valor3{
+    text-align:right;
+    padding-right:20px;
+}
 .cabecalhotabela{
     text-align:left;
     line-height:22px;
@@ -222,6 +230,19 @@ table{
         align-items:center;
         width:100%;
     }
+    #comeco{
+        width:95%;
+    }
+    #fim{
+        width:95%;
+    }
+    #total{
+        display:flex;
+        padding:11px 6px 6px 30px;
+    }
+    #total2{
+        padding:11px 20px 6px 0px;
+    }
 }
 /*media query para tablet - paisagem*/
 @media screen and (min-width:1024px){
@@ -321,37 +342,27 @@ table{
         flex-direction:column;
         width:60%;
     }
-    #valorcabecalho{
-        text-align:right;
-        padding-right:20px;
-    }
     .tabela{
         padding:0px 20px 20px 20px;
     }
-    #valor1, #valor2, #valor3{
-        text-align:right;
-        padding-right:20px;
-    }
-    #total{
-        display:flex;
-        padding:11px 6px 6px 30px;
-    }
-    #total2{
-        padding:11px 20px 6px 0px;
-    }
 }
 /*media query para telas maiores*/
-/*CONTINUAR DAQUI*/
 @media screen and (min-width:1111px){
-    body{
-        width:100%;
-        margin:0% 25% 0% 25%;
-    }
-    header{
-        position:absolute;
-    }
     .main{
         width:100%;
-        padding-top:10%;
+        margin:0% 15% 0% 30%;
     }
+   .headerblock{
+        width:1900px;
+   }
+   #logo{
+        padding-left:18%;
+    }
+    #pagetitle{
+        padding:20px;
+        margin:0;
+    }
+    #navbar{
+        padding-left:26%;
+    }  
 }
