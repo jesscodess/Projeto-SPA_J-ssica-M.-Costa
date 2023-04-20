@@ -113,13 +113,14 @@ table{
     border-collapse:collapse;
 }
 #comeco{
-    width:90%;
+    width:93%;
+    margin:0% 20% 0% 3%;
 }
 #fim{
-    width:90%;
+    width:93%;
     font-size:14px;
     line-height:18px;
-    margin:5px 18px 18px 18px;
+    margin:1% 20% 0% 3%;
     border-top:solid 1px #333333;
 }
 #valorcabecalho{
@@ -232,9 +233,11 @@ table{
     }
     #comeco{
         width:95%;
+        margin:0px 18px 0px 18px;
     }
     #fim{
         width:95%;
+        margin:3px 18px 0px 18px;
     }
     #total{
         display:flex;
@@ -278,7 +281,7 @@ table{
         font-size:16px;
         background-color:white;
         color:black;
-        padding:5px;
+        padding:15px;
         line-height:19.2px;
     }
     .navbartexto a{
