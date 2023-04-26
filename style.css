@@ -33,9 +33,38 @@ header{
 h1{
     font-size:20px;
 }
-#navbar{
+.navbar{
     display:none;
 }
+/*código menu oculto
+.navbar{
+    position:fixed;
+    display:flex;
+    flex-direction:column;
+    background-color:#333333;
+    top:0;
+    height:100%;
+    width:80%;
+}
+.vector{
+    padding-top:20px;
+    padding-left:20px;
+}
+.navbartexto a{
+    font-size:16px;
+    font-weight:600;
+    text-decoration:none;
+    color:white;
+    text-align:right;
+    display:block;
+}
+#linkcadastro{
+    padding:60px 20px 20px 40px;
+}
+#linklimpar{
+    padding:5px 20px 0px 40px;
+}
+*/
 #hamburger{
     padding:15px 22px 15px 10px;
 }
@@ -161,11 +190,15 @@ table{
 }
 /*media query para tablet - retrato*/
 @media screen and (min-width:768px){
+/*menu*/
+    /*código menu oculto
+    .navbar{
+        width:40%;
+    }
 /*formulário*/
     #novatransacao{
         display:block;
         margin-top:5px;
-        margin-right:46%;
         font-size:18px;
         line-height:22px;
         font-weight:bold;
@@ -174,7 +207,7 @@ table{
         margin:20px 20px 20px 23px;
         display:flex;
         flex-direction:flex-start;
-        align-items:flex-end;
+        align-items:center;
         border:solid 1px #333333;
         border-radius:5px;
     }
@@ -220,6 +253,7 @@ table{
     .submitbutton{
         display:flex;
         justify-content:flex-end;
+        align-self:flex-end;
         width:28%;
         margin:0px 16px 0px 0px;
         padding:3px;
@@ -271,7 +305,10 @@ table{
     #hamburger{
         display:none;
     }
-    #navbar{
+    .vector{
+        display:none;
+    }
+    .navbar{
         display:flex;
         padding-left:42%;
     }
@@ -364,7 +401,7 @@ table{
         padding:20px;
         margin:0;
     }
-    #navbar{
+    .navbar{
         padding-left:26%;
     }  
 }
