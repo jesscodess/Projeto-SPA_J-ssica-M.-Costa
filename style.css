@@ -387,21 +387,33 @@ table{
 }
 /*media query para telas maiores*/
 @media screen and (min-width:1111px){
-    .main{
-        width:100%;
-        margin:0% 15% 0% 30%;
+        body{
+            max-width:1900px;
+        }
+        .main{
+            max-width:1900px;
+            width:80%;
+            padding:0px 100px 100px 100px;
+        }
+        header{
+            position:static;
+            padding-left:0;
+            max-width:1900px;
+            width:100%;
+        }
+       .headerblock{
+            max-width:1900px;
+            width:100%;
+            justify-content:center;
+       }
+       .navbar{
+            padding-left:0%;
+       }
+        #pagetitle{
+            padding:20px 500px 20px 10px;
+        }
+        #logo{
+            padding:0;
+        }
     }
-   .headerblock{
-        width:1900px;
-   }
-   #logo{
-        padding-left:18%;
-    }
-    #pagetitle{
-        padding:20px;
-        margin:0;
-    }
-    .navbar{
-        padding-left:26%;
-    }  
 }
