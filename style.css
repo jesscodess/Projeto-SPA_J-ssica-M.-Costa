@@ -1,10 +1,15 @@
 /*geral*/
 body{
-    max-width:1100px;
     font-family: 'Lato', sans-serif;
     margin:0;
 }
 .main{
+    display:flex;
+    justify-content:center;
+}
+.mainwrapper{
+    width:100%;
+    max-width:1112px;
     display:flex;
     flex-direction:column;
 }
@@ -18,6 +23,14 @@ header{
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
+}
+.headerwrapper{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1112px;
 }
 #logo{
     padding:15px 10px 15px 22px;
@@ -284,7 +297,7 @@ table{
 /*media query para tablet - paisagem*/
 @media screen and (min-width:1024px){
 /*geral*/
-.main{
+.mainwrapper{
     display:flex;
     flex-direction:row;
 }
@@ -384,14 +397,11 @@ h2{
 }
 /*media query para telas maiores*/
 @media screen and (min-width:1111px){
-body{
-    max-width:1900px;
-}
 header{
     justify-content:center;
 }
-.main{
+/*.main{
     padding-right:145px;
     padding-left:145px;
-}
+}*/
 }
