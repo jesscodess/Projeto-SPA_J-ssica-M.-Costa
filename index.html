@@ -35,72 +35,72 @@
                     </div>
             </div>
         </header>
-        <div class="mainwrapper">
             <div class="main">
-                <div class="inputbox">
-                    <div id="novatransacao">
-                        <p>Nova transação</p>
-                    </div>
-                    <div class="campos">
-                        <div class="campo1">
-                            <label for="tipotransacao">Tipo de transação</label>
-                            <select name="transacoes" id="tipotransacao">
-                                <option value="compra">Compra</option>
-                                <option value="venda">Venda</option>
-                            </select>
+                <div class="mainwrapper">
+                    <div class="inputbox">
+                        <div id="novatransacao">
+                            <p>Nova transação</p>
                         </div>
-                        <div class="campo2">
-                            <label for="nomemercadoria">Nome da mercadoria</label>
-                            <input name="mercadorias" id="nomemercadoria" placeholder="Input">
+                        <div class="campos">
+                            <div class="campo1">
+                                <label for="tipotransacao">Tipo de transação</label>
+                                <select name="transacoes" id="tipotransacao">
+                                    <option value="compra">Compra</option>
+                                    <option value="venda">Venda</option>
+                                </select>
+                            </div>
+                            <div class="campo2">
+                                <label for="nomemercadoria">Nome da mercadoria</label>
+                                <input name="mercadorias" id="nomemercadoria" placeholder="Input">
+                            </div>
+                            <div class="campo3">
+                                <label for="valor">Valor</label>
+                                <input name="valores" id="valor" placeholder="R$ 0,00">
+                            </div>
                         </div>
-                        <div class="campo3">
-                            <label for="valor">Valor</label>
-                            <input name="valores" id="valor" placeholder="R$ 0,00">
+                            <div class="submitbutton">
+                            <button type="button" id="adicionar">Adicionar transação</button>
                         </div>
                     </div>
-                        <div class="submitbutton">
-                        <button type="button" id="adicionar">Adicionar transação</button>
-                    </div>
+                    <!--extrato aqui-->
+                    <div class="conteudotabela">
+                            <h2>Extrato de transações</h2>
+                            <div class="tabela">
+                                <table id="comeco">
+                                    <thead>
+                                        <tr>
+                                            <th class="cabecalhotabela"></th>
+                                            <th class="cabecalhotabela">Mercadoria</th>
+                                            <th class="cabecalhotabela" id="valorcabecalho">Valor</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="corpotabela">+</td>
+                                            <td class="corpotabela">Lorem ipsum dolor sit amet<br> consectetur</td>
+                                            <td class="corpotabela" id="valor1">R$ 12.999,99</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="corpotabela">-</td>
+                                            <td class="corpotabela">Quis nostrud exercitation</td>
+                                            <td class="corpotabela" id="valor2">R$ 99,99</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="corpotabela">+</td>
+                                            <td class="corpotabela">Lorem ipsum</td>
+                                            <td class="corpotabela" id="valor3">R$ 9,99</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table id="fim">
+                                        <tr>
+                                            <td></td>
+                                            <td id="total">Total</td>
+                                            <td id="total2">R$12.909,99<br> <span id="lucro">[LUCRO]</span></td>
+                                        </tr>
+                                </table>
+                            </div>
                 </div>
-                <!--extrato aqui-->
-                <div class="conteudotabela">
-                        <h2>Extrato de transações</h2>
-                        <div class="tabela">
-                            <table id="comeco">
-                                <thead>
-                                    <tr>
-                                        <th class="cabecalhotabela"></th>
-                                        <th class="cabecalhotabela">Mercadoria</th>
-                                        <th class="cabecalhotabela" id="valorcabecalho">Valor</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="corpotabela">+</td>
-                                        <td class="corpotabela">Lorem ipsum dolor sit amet<br> consectetur</td>
-                                        <td class="corpotabela" id="valor1">R$ 12.999,99</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="corpotabela">-</td>
-                                        <td class="corpotabela">Quis nostrud exercitation</td>
-                                        <td class="corpotabela" id="valor2">R$ 99,99</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="corpotabela">+</td>
-                                        <td class="corpotabela">Lorem ipsum</td>
-                                        <td class="corpotabela" id="valor3">R$ 9,99</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table id="fim">
-                                    <tr>
-                                        <td></td>
-                                        <td id="total">Total</td>
-                                        <td id="total2">R$12.909,99<br> <span id="lucro">[LUCRO]</span></td>
-                                    </tr>
-                            </table>
-                        </div>
-                </div>
-        </div>
+            </div>
     </body>
 </html>
